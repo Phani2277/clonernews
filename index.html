@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ClonerNews</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>ClonerNews</h1>
+  <nav>
+    <button data-type="stories">Stories</button>
+    <button data-type="jobs">Jobs</button>
+    <button data-type="polls">Polls</button>
+  </nav>
+  <input id="search" type="text" placeholder="Search posts...">
+</header>
+<section id="error" class="hidden"></section>
+<section id="live" class="hidden"></section>
+<section id="posts"></section>
+<div id="sentinel"></div>
+<button id="loadMore">Load more</button>
+<script src="main.js"></script>
+</body>
+</html>
