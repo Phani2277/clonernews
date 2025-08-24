@@ -179,7 +179,6 @@ async function searchPosts(query) {
   }
 }
 
-// debounce utility to avoid spamming requests
 function debounce(fn, delay) {
   let timeout;
   return (...args) => {
@@ -221,14 +220,12 @@ if (sentinel) {
 const debouncedSearch = debounce(e => searchPosts(e.target.value), 300);
 searchInput.addEventListener('input', debouncedSearch);
 
-// navigation buttons
 Array.from(document.querySelectorAll('nav button')).forEach(btn =>
   btn.addEventListener('click', () => loadType(btn.dataset.type))
 );
 
 loadType('stories');
 
-// live data updates every 5 seconds
 async function checkForUpdates() {
   try {
     const newIds = await fetchIds(currentType);
