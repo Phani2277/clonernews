@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 1rem;
+}
+header {
+  background: #ff6600;
+  padding: 0.5rem;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+header input {
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+nav button {
+  margin-right: 0.5rem;
+}
+#posts .post {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+.post h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+.poll-options {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+}
+.poll-options li {
+  margin-bottom: 0.25rem;
+}
+.post .comments {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  border-left: 2px solid #eee;
+  padding-left: 1rem;
+}
+.comment {
+  margin-bottom: 0.5rem;
+}
+#live {
+  background: #ffffcc;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.hidden { display: none; }
+#error {
+  background: #fdd;
+  color: #900;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
